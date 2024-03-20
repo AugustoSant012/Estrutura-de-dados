@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+.tudo{
+
+    text-align: center;
+   padding-top: 200px;
+}
+    </style>
+    <!--Utilize uma estrutura de controle para descobrir se o valor de sua idade é par ou ímpar.-->
+    <div class="tudo">
+    <p>Coloque sua idade!</p>
+    <input id="idade" type="number">
+    <br/>
+    <br/>
+    <button id="botao" onclick="VerIdade()">Veja se sua idade é impar ou par!</button>
+</div>
+    <script>
+        function VerIdade(){
+            let idade = parseInt(document.getElementById("idade").value);
+            if(idade % 2 === 0){
+                alert("Par");
+            } else {
+                alert("Ímpar");
+            }
+        }
+    </script>
+</body>
+</html>
